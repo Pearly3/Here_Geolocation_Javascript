@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Geolocation from './components/GeoLocation';
+const apiKey = 't0uaLsJOpQUS7lBGXWjFQp7i5O7fmGpFIZOPE3Gw9u4';
+const appId = 'NzN9083Q9WdlHxkWVyfv';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Geolocation apiKey={apiKey} appId={appId} />
     </div>
   );
 }
-
 export default App;
